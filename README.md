@@ -1,7 +1,7 @@
 ## Tugas besar Kelompok 4B
------ Anggota -----
--- Sayed Sultan Maghrifatullah (002)
--- Nasywa Putri Irfianti (020)
--- Muhammad Yusril Syah (026)
--- Trialy Yudis Puta (042)
--- Abraham Ketaren (052)
+----- Anggota ----- <br>
+-- Sayed Sultan Maghrifatullah (002) <br>
+-- Nasywa Putri Irfianti (020) <br>
+-- Muhammad Yusril Syah (026) <br>
+-- Trialy Yudis Puta (042) <br>
+-- Abraham Ketaren (052) <br>
