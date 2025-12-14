@@ -41,7 +41,7 @@ entity elevator_fsm_scan is
         -- MP(0) = Pintu (1: terbuka, 0: tertutup)
         MP      : out std_logic_vector(1 downto 0)
 
-        -- (Optional) untuk debug: state saat ini
+        -- untuk debug: state saat ini
         -- state_debug : out std_logic_vector(2 downto 0)
     );
 end entity;
@@ -113,9 +113,9 @@ begin
     (r3 and at_f3);
 
     above_req <= ((r2 or r3) and at_f1) or   -- di L1, ada req L2/L3
-    ( r3        and at_f2);     -- di L2, ada req L3
+    ( r3 and at_f2);     -- di L2, ada req L3
 
-    below_req <= ( r1        and at_f2) or   -- di L2, ada req L1
+    below_req <= ( r1 and at_f2) or   -- di L2, ada req L1
     ((r1 or r2) and at_f3);     -- di L3, ada req L1/L2
 
     any_req <= r1 or r2 or r3;
@@ -260,7 +260,7 @@ begin
               "01" when SERVIS,      -- motor diam, pintu buka
               "00" when others;
 
-    -- Optional debug (bisa diaktifkan kalau mau)
+    -- (debug)
     -- with state_reg select
     --     state_debug <= "000" when IDLE,
     --                    "001" when DECIDE,
